@@ -75,9 +75,9 @@ app.get("/api/health", (req, res) => {
   res.status(200).json({ status: "ok" });
 });
 
-// Connect DB
+
 connectDB();
 
-// ⚡ Export app for Vercel
+
 module.exports = app;
 
