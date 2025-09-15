@@ -12,10 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://yardstick-internship-assignment-fro.vercel.app",
-      "http://localhost:5173",
-    ],
+    origin: true, 
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
