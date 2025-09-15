@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const NOTE_URL = "https://yardstick-internship-assignment.vercel.app/api/notes";
+const NOTE_URL = "https://yardstick-internship-assignment-bac.vercel.app/api/notes";
 axios.defaults.withCredentials = true;
 
 export const useNotesStore = create((set, get) => ({

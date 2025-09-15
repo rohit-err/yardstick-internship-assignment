@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const AUTH_URL = `https://yardstick-internship-assignment.vercel.app/api/auth`;
+const AUTH_URL = `https://yardstick-internship-assignment-bac.vercel.app/api/auth`;
 axios.defaults.withCredentials = true;
 
 export const useAuthStore = create((set) => ({
