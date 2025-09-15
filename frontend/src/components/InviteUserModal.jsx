@@ -21,7 +21,7 @@ export default function InviteUserModal({ onClose, onInviteSuccess }) {
 
         try {
             const res = await axios.post(
-                `http://localhost:5001/api/tenants/${tenant.slug}/invite`,
+                `https://yardstick-internship-assignment-bac.vercel.app/api/tenants/${tenant.slug}/invite`,
                 { email, role }
             );
             setMessage(res.data.message);

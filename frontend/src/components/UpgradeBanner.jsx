@@ -21,7 +21,7 @@ export default function UpgradeBanner() {
     setMessage(null);
     setLoading(true);
     try {
-      const base = "http://localhost:5001/api";
+      const base = "https://yardstick-internship-assignment-bac.vercel.app/api";
       await axios.post(`${base}/tenants/${tenant.slug}/upgrade`);
       setMessage("Upgraded to Pro successfully.");
       updateTenant({ plan: "pro", freeNotesUsed: 0 });
