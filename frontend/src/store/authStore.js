@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import axios from "axios";
-
+import { useNotesStore } from "./noteStore";
 const AUTH_URL = `https://yardstick-internship-assignment-bac.vercel.app/api/auth`;
 axios.defaults.withCredentials = true;
 
@@ -72,6 +72,7 @@ export const useAuthStore = create((set) => ({
                 isLoading: false,
                 isAuthenticated: false
             });
+            useNotesStore.setState({ notes: [] });
         }
     },
     updateTenant: (updatedTenant) =>
